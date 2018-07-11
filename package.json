@@ -4,6 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "font-awesome": "^4.7.0",
     "history": "^1.17.0",
@@ -27,7 +28,7 @@
     "file-loader": "^1.1.11",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
-    "webpack": "^3.6.0",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^2.9.1"
   },
   "scripts": {
