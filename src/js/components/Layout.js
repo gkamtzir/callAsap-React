@@ -11,10 +11,12 @@ export default class Layout extends React.Component {
 	}
 
 	render() {
+
+		console.log('layout');
+
 		return (
 			<div>
 				<Navbar />
-				{ this.state.title }
 			</div>
 		);
 	}

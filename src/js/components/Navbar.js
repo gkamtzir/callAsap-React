@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends React.Component {
 
@@ -6,7 +8,9 @@ export default class Navbar extends React.Component {
 		return (
 			<div>
 				<nav class="navbar navbar-expand-lg bg-light">
-					<a class="navbar-brand" href="#"><a to="/">CallAsap</a></a>
+					<div class="navbar-brand">
+						<Link to="/">CallAsap</Link>
+					</div>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
 						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,13 +20,13 @@ export default class Navbar extends React.Component {
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a to="/">Home</a>
+								<Link to="/">Home</Link>
 							</li>
 							<li class="nav-item">
-								<a to="/search">Search</a>
+								<Link to="/search">Search</Link>
 							</li>
 							<li class="nav-item">
-								<a to="/about">About</a>
+								<Link to="/about">About</Link>
 							</li>
 
 							<li>
