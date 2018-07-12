@@ -6,8 +6,6 @@ export default class Country extends React.Component {
 
     render() {
 
-        console.log('country');
-
         if (this.props.country === null) {
 
             return (

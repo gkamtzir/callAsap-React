@@ -4,8 +4,6 @@ export default class About extends React.Component {
 
     render() {
 
-        console.log('about');
-
         return(
             <div class="container">
                 

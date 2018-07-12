@@ -6,9 +6,9 @@ import Country from './Country';
 
 export default class Home extends React.Component {
 
-    constructor() {
+    constructor(props) {
 
-        super();
+        super(props);
         this.state = {
             country: null,
             emergencies: []
@@ -46,8 +46,6 @@ export default class Home extends React.Component {
     }
 
     render() {
-
-        console.log('home');
 
         return(
             <div class="container">
