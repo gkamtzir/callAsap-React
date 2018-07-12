@@ -45,7 +45,7 @@ export default class Home extends React.Component {
 
         return(
             <div class="container">
-                <h1>Home</h1>
+                <h1>What is your emergency?</h1>
                 <Country country={this.state.country} emergencies={this.state.emergencies}/>
             </div>
         )
