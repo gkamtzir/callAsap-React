@@ -1,0 +1,11 @@
+@import 'loaders.css/src/animations/ball-rotate.scss';
+
+.loader-hidden {
+	display: none;
+}
+.loader-active {
+	display: block;
+	width: 20px;
+	margin: auto;
+	margin-top: 35px;
+}

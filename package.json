@@ -9,9 +9,11 @@
     "font-awesome": "^4.7.0",
     "history": "^1.17.0",
     "jquery": "^3.3.1",
+    "loaders.css": "^0.1.2",
     "popper.js": "^1.14.3",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-loaders": "^3.0.1",
     "react-router-dom": "^4.4.0-alpha.1"
   },
   "devDependencies": {
@@ -26,6 +28,8 @@
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^3.12.0",

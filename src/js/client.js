@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import '../css/main.css';
 import '../css/font.css';
+import '../css/loader.scss';
 
 import Layout from './components/Layout';
 import Home from './components/Home';

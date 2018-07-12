@@ -11,7 +11,7 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             country: null,
-            emergencies: []
+            emergencies: null
         };
 
     }
@@ -36,7 +36,6 @@ export default class Home extends React.Component {
                 axios.get('http://83.212.115.201/api.php/country/emergency/' + countryName)
                     .then(response => {
 
-                        console.log(response.data);
                         this.setState({emergencies: response.data});
 
                     });

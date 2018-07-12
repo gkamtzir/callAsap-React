@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Loader from 'react-loaders';
+
 export default class Emergencies extends React.Component {
 
     render() {
@@ -7,8 +9,8 @@ export default class Emergencies extends React.Component {
         if (this.props.emergencies === null) {
 
             return (
-                <div></div>
-            );
+                <Loader type="ball-rotate" />
+            )
 
         }
 
