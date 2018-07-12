@@ -34,7 +34,7 @@ export default class Country extends React.Component {
                         <tr>
                             <td>{ this.props.country.Languages == "Unknown" ? "---" : this.props.country.Languages}</td>
                             <td>{ this.props.country.Responsiveness == "Unknown" ? "---" : this.props.country.Responsiveness}</td>
-                            <td>{ this.props.country.SimNeeded112 == "Unknown" ? "---" : this.props.country.SimNeeded112}}</td>
+                            <td>{ this.props.country.SimNeeded112 == "Unknown" ? "---" : this.props.country.SimNeeded112}</td>
                         </tr>
                     </tbody>
                 </table>
