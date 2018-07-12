@@ -7,6 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import '../css/main.css';
 import '../css/font.css';
 import '../css/loader.scss';
+import '../css/tooltip.css';
 
 import Layout from './components/Layout';
 import Home from './components/Home';

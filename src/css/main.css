@@ -59,6 +59,11 @@ button span {
     border-radius: 17px;
     margin:10px;
 }
+
+.country-select {
+    height: 30px;
+}
+
 .feedback {
     font-size: 12px;
 }
