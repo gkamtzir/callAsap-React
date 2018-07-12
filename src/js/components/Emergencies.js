@@ -1,10 +1,8 @@
 import React from 'react';
 
-export default class emergencies extends React.Component {
+export default class Emergencies extends React.Component {
 
     render() {
-
-        console.log('emergencies');
 
         if (this.props.emergencies === null) {
 
@@ -14,11 +12,9 @@ export default class emergencies extends React.Component {
 
         }
 
-        console.log(this.props.emergencies);
-
         if (this.props.emergencies.length > 0) {
 
-            emergencies = this.props.emergencies.map(emergency => {
+            let emergencies = this.props.emergencies.map(emergency => {
 
                 return <tr key={emergency.Number}>
                             <td>{ emergency.Type }</td>
