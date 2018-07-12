@@ -23,12 +23,9 @@ export default class Home extends React.Component {
 
                 let countryName = response.data.country;
 
-                console.log(countryName);
-
                 axios.get('http://83.212.115.201/api.php/country/' + countryName)
                     .then(response => {
 
-                        console.log(response.data);
                         this.setState({country: response.data});
 
                     });
