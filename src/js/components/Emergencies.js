@@ -18,7 +18,7 @@ export default class Emergencies extends React.Component {
 
             let emergencies = this.props.emergencies.map(emergency => {
 
-                return <tr key={emergency.Number}>
+                return <tr key={emergency.Type}>
                             <td>{ emergency.Type }</td>
                             <td>{ emergency.Number }</td>
                         </tr>;
