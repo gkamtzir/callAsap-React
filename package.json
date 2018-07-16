@@ -28,6 +28,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "jsdoc": "^3.5.5",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
