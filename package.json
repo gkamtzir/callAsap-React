@@ -29,6 +29,7 @@
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "jsdoc": "^3.5.5",
+    "minami": "^1.2.3",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
@@ -38,6 +39,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
+    "jsdoc": "jsdoc --configure .jsdoc.json --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
