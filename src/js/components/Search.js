@@ -1,9 +1,20 @@
+/**
+ * @author George Kamtziridis <georgekam96@gmail.com>
+ */
+
 import React from 'react';
 
 import axios from 'axios';
 
 import Country from './Country';
 
+/**
+ * The constructor initializes component's state and binds
+ * getCountry's context to component's context.
+ * @class Search
+ * @classdesc The react component which makes up the Search page.
+ * @extends React.Component
+ */
 export default class Search extends React.Component {
 
     constructor(props) {
@@ -20,6 +31,13 @@ export default class Search extends React.Component {
 
     }
 
+    /**
+	 * Fetching all the available countries
+     * and constructing the corresponding
+     * options.
+     * @memberOf Search
+     * @instance
+     */
     componentDidMount() {
 
         axios.get('http://83.212.115.201/api.php/country')
@@ -43,6 +61,13 @@ export default class Search extends React.Component {
 
     }
 
+    /**
+	 * Fetching selected country's emergency
+     * phone numbers.
+     * @param {Object} event - The event that triggered the listener.
+     * @memberOf Search
+     * @instance
+     */
     getCountry(event) {
 
         let countryName = event.target.value;
@@ -64,6 +89,11 @@ export default class Search extends React.Component {
 
     }
 
+    /**
+	 * Render the component's view.
+     * @memberOf Search
+     * @instance
+     */
     render() {
 
         return(

@@ -1,7 +1,21 @@
+/**
+ * @author George Kamtziridis <georgekam96@gmail.com>
+ */
+
 import React from 'react';
 
+/**
+ * @class About
+ * @classdesc The react component which makes up the About page.
+ * @extends React.Component
+ */
 export default class About extends React.Component {
 
+    /**
+	 * Render the component's view.
+     * @memberOf About
+     * @instance
+     */
     render() {
 
         return(

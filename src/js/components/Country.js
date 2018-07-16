@@ -1,9 +1,23 @@
+/**
+ * @author George Kamtziridis <georgekam96@gmail.com>
+ */
+
 import React from 'react';
 
 import Emergencies from './Emergencies';
 
+/**
+ * @class Country
+ * @classdesc The react component which makes up the country section of Home and Search pages.
+ * @extends React.Component
+ */
 export default class Country extends React.Component {
 
+    /**
+	 * Render the component's view.
+     * @memberOf Country
+     * @instance
+     */
     render() {
 
         if (this.props.country === null) {

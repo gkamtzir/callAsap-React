@@ -1,9 +1,19 @@
+/**
+ * @author George Kamtziridis <georgekam96@gmail.com>
+ */
+
 import React from 'react';
 
 import axios from 'axios';
 
 import Country from './Country';
 
+/**
+ * The constructor initializes component's state.
+ * @class Home
+ * @classdesc The react component which makes up the Home page.
+ * @extends React.Component
+ */
 export default class Home extends React.Component {
 
     constructor(props) {
@@ -16,6 +26,13 @@ export default class Home extends React.Component {
 
     }
 
+    /**
+	 * Fetching user's country based on his/her
+     * IP and then fetching the emergency phone
+     * numbers for that particular country.
+     * @memberOf Home
+     * @instance
+     */
     componentDidMount() {
 
         axios.get('http://ip-api.com/json')
@@ -41,6 +58,11 @@ export default class Home extends React.Component {
 
     }
 
+    /**
+	 * Render the component's view.
+     * @memberOf Home
+     * @instance
+     */
     render() {
 
         return(

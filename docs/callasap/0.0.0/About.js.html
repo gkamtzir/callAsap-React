@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="About.html">About</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="About.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Country.html">Country</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Country.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Emergencies.html">Emergencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Emergencies.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Home.html">Home</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Home.html#componentDidMount">componentDidMount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Home.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Layout.html">Layout</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Layout.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Navbar.html">Navbar</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Navbar.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Search.html">Search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Search.html#componentDidMount">componentDidMount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Search.html#getCountry">getCountry</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Search.html#render">render</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">About.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @author George Kamtziridis &lt;georgekam96@gmail.com>
+ */
+
+import React from 'react';
+
+/**
+ * @class About
+ * @classdesc The react component which makes up the About page.
+ * @extends React.Component
+ */
+export default class About extends React.Component {
+
+    /**
+	 * Render the component's view.
+     * @memberOf About
+     * @instance
+     */
+    render() {
+
+        return(
+            &lt;div class="container">
+                
+                &lt;h1>ABOUT&lt;/h1>
+
+                &lt;br />
+                &lt;p>
+                    Each year, more than 500 million people visit Europe.
+                    Characterized by stunning scenery in most of its countries,
+                    Europe is also the mother of literature, music, art and philosophy: a seemingly perfect destination for permanent residence – even more so when its organized workplaces are taken into account.
+                &lt;/p>
+                &lt;p>
+                &lt;i>Safety first&lt;/i>, as they say; a phrase more than applicable in Europe.
+                    Each country has its own unique emergency numbers, while at the same time there is a single 3-digit phone number (112) available &lt;i>everywhere&lt;/i> in Europe.
+                    All calls are given immediate response and answered in a variety of languages, depending on the country.
+                &lt;/p>
+                &lt;h3>&lt;b>What is CallAsap?&lt;/b>&lt;/h3>
+                &lt;p>
+                    Here in &lt;b>CallAsap&lt;/b>, we have gathered Europe's emergency phone numbers with reliability and precision.
+                    All information can be intuitively and quickly accessed via the "Search" option.
+                &lt;/p>
+                &lt;p>
+                    We have also designed our own API from scratch, which is publicly available &lt;a href="http://83.212.115.201/api">here&lt;/a> and can be freely used.
+                &lt;/p>
+                &lt;br />
+                &lt;p class="feedback">
+                    &lt;b>For every question or comment you may have, you can reach us at: georgekam96@gmail.com&lt;/b>
+                &lt;/p>
+            &lt;/div>
+        )
+    }
+
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jul 16 2018 17:37:04 GMT+0300 (GTB Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

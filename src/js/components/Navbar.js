@@ -1,9 +1,23 @@
+/**
+ * @author George Kamtziridis <georgekam96@gmail.com>
+ */
+
 import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+/**
+ * @class Navbar
+ * @classdesc The react component which makes up the navbar.
+ * @extends React.Component
+ */
 export default class Navbar extends React.Component {
 
+	/**
+	 * Render the component's view.
+	 * @memberOf Navbar
+     * @instance
+     */
 	render() {
 		return (
 			<div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="About.html">About</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="About.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Country.html">Country</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Country.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Emergencies.html">Emergencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Emergencies.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Home.html">Home</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Home.html#componentDidMount">componentDidMount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Home.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Layout.html">Layout</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Layout.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Navbar.html">Navbar</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Navbar.html#render">render</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Search.html">Search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Search.html#componentDidMount">componentDidMount</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Search.html#getCountry">getCountry</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Search.html#render">render</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Home.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @author George Kamtziridis &lt;georgekam96@gmail.com>
+ */
+
+import React from 'react';
+
+import axios from 'axios';
+
+import Country from './Country';
+
+/**
+ * The constructor initializes component's state.
+ * @class Home
+ * @classdesc The react component which makes up the Home page.
+ * @extends React.Component
+ */
+export default class Home extends React.Component {
+
+    constructor(props) {
+
+        super(props);
+        this.state = {
+            country: null,
+            emergencies: null
+        };
+
+    }
+
+    /**
+	 * Fetching user's country based on his/her
+     * IP and then fetching the emergency phone
+     * numbers for that particular country.
+     * @memberOf Home
+     * @instance
+     */
+    componentDidMount() {
+
+        axios.get('http://ip-api.com/json')
+            .then(response => {
+
+                let countryName = response.data.country;
+
+                axios.get('http://83.212.115.201/api.php/country/' + countryName)
+                    .then(response => {
+
+                        this.setState({country: response.data});
+
+                    });
+
+                axios.get('http://83.212.115.201/api.php/country/emergency/' + countryName)
+                    .then(response => {
+
+                        this.setState({emergencies: response.data});
+
+                    });
+
+            });
+
+    }
+
+    /**
+	 * Render the component's view.
+     * @memberOf Home
+     * @instance
+     */
+    render() {
+
+        return(
+            &lt;div class="container">
+                &lt;h1>What is your emergency?&lt;/h1>
+                &lt;Country country={this.state.country} emergencies={this.state.emergencies}/>
+            &lt;/div>
+        )
+    }
+
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jul 16 2018 17:37:04 GMT+0300 (GTB Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

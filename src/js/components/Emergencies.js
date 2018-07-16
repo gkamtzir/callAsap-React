@@ -1,9 +1,23 @@
+/**
+ * @author George Kamtziridis <georgekam96@gmail.com>
+ */
+
 import React from 'react';
 
 import Loader from 'react-loaders';
 
+/**
+ * @class Emergencies
+ * @classdesc The react component which makes up the emergency section of Country component.
+ * @extends React.Component
+ */
 export default class Emergencies extends React.Component {
 
+    /**
+	 * Render the component's view.
+     * @memberOf Emergencies
+     * @instance
+     */
     render() {
 
         if (this.props.emergencies === null) {
