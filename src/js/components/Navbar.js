@@ -20,8 +20,6 @@ export default class Navbar extends React.Component {
      */
 	render() {
 
-		console.log(window.location);
-
 		return (
 			<div>
 				<nav class="navbar navbar-expand-lg bg-light">
