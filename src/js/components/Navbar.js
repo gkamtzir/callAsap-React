@@ -19,6 +19,9 @@ export default class Navbar extends React.Component {
      * @instance
      */
 	render() {
+
+		console.log(window.location);
+
 		return (
 			<div>
 				<nav class="navbar navbar-expand-lg bg-light">
@@ -33,14 +36,14 @@ export default class Navbar extends React.Component {
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<Link to="/">Home</Link>
+							<li class="nav-item">
+								<Link to="/" class={window.location.pathname === '/' ? 'active' : ''}>Home</Link>
 							</li>
 							<li class="nav-item">
-								<Link to="/search">Search</Link>
+								<Link to="/search" class={window.location.pathname === '/search' ? 'active' : ''}>Search</Link>
 							</li>
 							<li class="nav-item">
-								<Link to="/about">About</Link>
+								<Link to="/about" class={window.location.pathname === '/about' ? 'active' : ''}>About</Link>
 							</li>
 
 							<li>
