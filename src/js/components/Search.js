@@ -43,7 +43,27 @@ export default class Search extends React.Component {
         axios.get('http://83.212.115.201/api.php/country')
             .then(response => {
 
-                let countryOptionElements = response.data.map(country => {
+                let countries = response.data;
+
+                countries.sort(function(a, b) {
+
+                    if (a.Name < b.Name) {
+
+                        return -1;
+
+                    } else if (a.Name > b.Name) {
+
+                        return 1;
+
+                    } else {
+
+                        return 0;
+
+                    }
+
+                });
+
+                let countryOptionElements = countries.map(country => {
 
                     return (
                         <option value={country.Name} key={country.Name}>{country.Name}</option>
