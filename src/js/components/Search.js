@@ -40,7 +40,7 @@ export default class Search extends React.Component {
      */
     componentDidMount() {
 
-        axios.get('http://83.212.115.201/api.php/country')
+        axios.get('http://gkamtzir.webpages.auth.gr/api.php/country')
             .then(response => {
 
                 let countries = response.data;
@@ -92,7 +92,7 @@ export default class Search extends React.Component {
 
         let countryName = event.target.value;
 
-        axios.get('http://83.212.115.201/api.php/country/' + countryName)
+        axios.get('http://gkamtzir.webpages.auth.gr/api.php/country/' + countryName)
             .then(response => {
 
                 this.setState({country: response.data});
@@ -100,7 +100,7 @@ export default class Search extends React.Component {
 
             });
 
-        axios.get('http://83.212.115.201/api.php/country/emergency/' + countryName)
+        axios.get('http://gkamtzir.webpages.auth.gr/api.php/country/emergency/' + countryName)
             .then(response => {
 
                 this.setState({emergencies: response.data});
