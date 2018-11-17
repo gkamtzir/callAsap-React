@@ -40,7 +40,7 @@ export default class About extends React.Component {
                     All information can be intuitively and quickly accessed via the "Search" option.
                 </p>
                 <p>
-                    We have also designed our own API from scratch, which is publicly available <a href="http://83.212.115.201/api">here</a> and can be freely used.
+                    We have also designed our own API from scratch, which is publicly available <a href="http://gkamtzir.webpages.auth.gr/api">here</a> and can be freely used.
                 </p>
                 <br />
                 <p class="feedback">

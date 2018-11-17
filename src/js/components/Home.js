@@ -40,14 +40,14 @@ export default class Home extends React.Component {
 
                 let countryName = response.data.country;
 
-                axios.get('http://83.212.115.201/api.php/country/' + countryName)
+                axios.get('http://gkamtzir.webpages.auth.gr/api.php/country/' + countryName)
                     .then(response => {
 
                         this.setState({country: response.data});
 
                     });
 
-                axios.get('http://83.212.115.201/api.php/country/emergency/' + countryName)
+                axios.get('http://gkamtzir.webpages.auth.gr/api.php/country/emergency/' + countryName)
                     .then(response => {
 
                         this.setState({emergencies: response.data});
