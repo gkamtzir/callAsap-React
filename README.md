@@ -5,7 +5,7 @@ Find the emergency phone number you need ASAP.
 You can visit the website at http://callasap.eu.
 
 *Right now, the CallAsap website is running on Angular 4.
-You can check the Vue version of it onhttp://gkamtzir.webpages.auth.gr/callasap/react*
+You can check the Vue version of it on http://gkamtzir.webpages.auth.gr/callasap/react*
 
 ## What is CallAsap?
 
